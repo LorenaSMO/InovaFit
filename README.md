@@ -1,4 +1,19 @@
-# Inovafit
+# Projeto InovaFit
+
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  
+
+Nosso primeiro projeto utilizando Angular 17, onde o objetivo é criar um site para uma academia local.
+
+### Integrantes: 
+- Daniel Gomes
+- Gabriel Vasconcelos
+- Lorena S.
+- Martin Vitabar.
+
+# Descrição em detalhes de alguns comandos do Angular e como rodar o projeto localmente:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
 
