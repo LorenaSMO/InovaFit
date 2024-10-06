@@ -1,0 +1,83 @@
+.services {
+  padding: 64px 64px;
+  text-align: center;
+  font-family: "Signika", sans-serif;
+
+  h2 {
+    font-size: 63px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .section-description {
+    font-size: 24px;
+    opacity: 0.4;
+    margin-bottom: 90px;
+    font-weight: 300;
+  }
+
+  .grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 87px;
+    align-items: center;
+
+    .activity-details {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 110px;
+      .activity-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        width: 352px;
+
+        .info {
+          text-align: left;
+
+          h3 {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 5px;
+          }
+
+          p {
+            font-size: 18px;
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+
+    .activity-images {
+      display: grid;
+      align-items: center;
+      grid-template-areas:
+        "img1 img3"
+        "img2 img3";
+      gap: 25px;
+
+      img {
+        border-radius: 35px;
+      }
+
+      img:nth-child(1) {
+        grid-area: img1;
+        width: 100%;
+        height: auto;
+      }
+
+      img:nth-child(2) {
+        grid-area: img2;
+        width: 100%;
+        height: auto;
+      }
+
+      img:nth-child(3) {
+        grid-area: img3;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
