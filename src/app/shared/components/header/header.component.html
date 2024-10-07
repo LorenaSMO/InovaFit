@@ -1,11 +1,11 @@
 <nav class="navbar">
   <img ngSrc="/assets/logo.png" width="112" height="50" />
   <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/services">Modalidades</a></li>
-    <li><a routerLink="/pricing-plans">Planos e Preços</a></li>
-    <li><a routerLink="/gym-gallery">Galeria</a></li>
-    <li><a routerLink="/contact">Contato</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Modalidades</a></li>
+    <li><a href="#plans">Planos</a></li>
+    <li><a href="#gallery">Galeria</a></li>
+    <li><a href="#contact">Contato</a></li>
   </ul>
-  <app-button buttonText="Comece hoje" />
+  <app-button buttonText="Comece hoje" (click)="navigateToContact()" />
 </nav>

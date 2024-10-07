@@ -11,4 +11,11 @@ import { NgOptimizedImage } from '@angular/common';
 })
 export class HomeComponent {
 
+  navigateToContact() {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }

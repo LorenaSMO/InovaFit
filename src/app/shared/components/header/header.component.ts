@@ -11,4 +11,11 @@ import { ButtonComponent } from "../button/button.component";
 })
 export class HeaderComponent {
 
+  navigateToContact() {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }
