@@ -11,9 +11,13 @@
 
   h1 {
     font-size: 64px;
-    font-weight: 700;;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 16px;
+
+    @media (max-width: 1440px) and (min-width: 1024px) {
+      font-size: 48px;
+    }
   }
 
   p {
@@ -23,6 +27,9 @@
     margin-bottom: 60px;
     span {
       font-weight: 700;
+    }
+    @media (max-width: 1440px) and (min-width: 1024px) {
+      font-size: 20px;
     }
   }
   .icons {
