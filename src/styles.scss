@@ -3,7 +3,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: box;
+  box-sizing: border-box;
+  font-family: "Signika", sans-serif;
+}
+
+@mixin backgroundProps() {
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
 }
 
 html {
