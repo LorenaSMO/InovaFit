@@ -41,8 +41,16 @@
           }
 
           p {
+            margin-top: 3px;
             font-size: 18px;
-            opacity: 0.4;
+            color: rgba(0, 0, 0, 0.4);
+
+            span {
+
+              color: black;
+              opacity: 1;
+              font-weight: 900;
+            }
           }
         }
       }
