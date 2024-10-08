@@ -2,11 +2,21 @@
   display: flex;
   align-items: center;
   gap: 400px;
-  margin-top: 153px;
+  margin-top: 90px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 }
 
 .side-a {
   margin-left: 64px;
+  @media (max-width: 768px) {
+    margin-left: 0;
+    text-align: center;
+  }
 
   h1 {
     font-size: 64px;
@@ -16,6 +26,10 @@
 
     @media (max-width: 1440px) and (min-width: 1024px) {
       font-size: 48px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 32px;
     }
   }
 
@@ -30,13 +44,24 @@
     @media (max-width: 1440px) and (min-width: 1024px) {
       font-size: 20px;
     }
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
   }
   .icons {
     margin-top: 46px;
     display: flex;
     gap: 43px;
+
     a {
       cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      margin-top: 30px;
     }
   }
 }
@@ -47,6 +72,11 @@
   img {
     position: relative;
     z-index: 1;
+    @media (max-width: 768px) {
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &::before {
@@ -58,6 +88,12 @@
     height: 900px;
     background-color: #1f1f1f;
     z-index: 0;
+
+    @media (max-width: 768px) {
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
   }
 }
 .info-bar {
@@ -68,22 +104,40 @@
   color: white;
   padding: 40px;
   margin-top: -5px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .info-item {
   text-align: center;
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 
   h2 {
     font-size: 36px;
     font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 
   p {
     font-size: 14px;
     font-weight: 600;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
   span {
     font-size: 14px;
     font-weight: 400;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 }
