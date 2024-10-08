@@ -1,11 +1,17 @@
 <nav class="navbar">
-  <img ngSrc="/assets/logo.png" width="112" height="50" />
-  <ul>
+  <img ngSrc="/assets/logo.png" width="112" height="50" alt="Logo" />
+  <ul class="nav-links" [class.active]="isMenuOpen">
     <li><a href="#home">Home</a></li>
     <li><a href="#services">Modalidades</a></li>
     <li><a href="#plans">Planos</a></li>
     <li><a href="#gallery">Galeria</a></li>
     <li><a href="#contact">Contato</a></li>
+
   </ul>
-  <app-button buttonText="Comece hoje" (click)="navigateToContact()" />
+  <app-button buttonText="Comece hoje" (click)="navigateToContact()"/>
+  <div class="hamburger" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
