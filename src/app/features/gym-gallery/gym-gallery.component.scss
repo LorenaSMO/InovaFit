@@ -5,47 +5,53 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
-    margin-bottom: 100px;
 
     .gallery-photos {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 20px;
         width: 1250px;
         position: relative;
+        padding: 80px 0;
 
-        #btn-left {
-            position: absolute;
-            left: 0;
+        mat-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
         }
-        #btn-right {
-            position: absolute;
-            right: 0;
+        .mat-mdc-fab.mat-accent {
+            --mdc-fab-container-color: white;
         }
 
         .box {
-            transform: scale(0.8);
-            width: 350px;
-            height: 200px;
             background: rgb(44, 44, 44);
             border-radius: 15px;
-            margin: 0 -65px;
+            box-shadow: 0 0 10px 1px rgb(34, 34, 34);;
         }
         .box-second {
-            transform: scale(1);
+            width: 280px;
+            height: 160px;
             background: rgb(83, 83, 83);
             position: relative;
             z-index: 3;
+            filter: brightness(.6);
             @include backgroundProps();
         }
         .box-primary {
-            transform: scale(1.3);
+            width: 350px;
+            height: 200px;
             background: grey;
             position: relative;
             z-index: 4;
-            margin: 0 20px;
             @include backgroundProps();
         }
     }
+
+    @media (max-width: 426px) {
+        .box-second {
+            display: none;
+        }
+    }
 }
+

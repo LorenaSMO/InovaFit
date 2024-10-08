@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Signika", sans-serif;
 }
 
 @mixin backgroundProps() {
@@ -14,5 +13,6 @@
 }
 
 html {
+  font-family: "Signika", sans-serif;
   scroll-behavior: smooth;
 }

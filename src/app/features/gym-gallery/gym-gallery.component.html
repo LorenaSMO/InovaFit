@@ -1,12 +1,18 @@
 <section class="gallery">
     <h2>NOSSAS INSTALAÇOES</h2>
     <div class="gallery-photos">
-        <button id="btn-left" (click)="scrollLeft()" >
+        <button id="btn-left" (click)="scrollLeft()" mat-fab>
+            <mat-icon >
+                chevron_left
+            </mat-icon>
         </button>
         <div class="box box-second prevImg" [ngStyle]="{'background-image': prevImgUrl}"></div>
         <div class="box box-primary mainImg" [ngStyle]="{'background-image': mainImgUrl}"></div>
         <div class="box box-second nextImg" [ngStyle]="{'background-image': nextImgUrl}"></div>
-        <button id="btn-right" (click)="scrollRight()">
+        <button id="btn-right" (click)="scrollRight()" mat-fab>
+            <mat-icon>
+                chevron_right
+            </mat-icon>
         </button>
     </div>
 </section>
